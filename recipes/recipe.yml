@@ -36,7 +36,7 @@ modules:
     snippets:
       - "sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-40.noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-40.noarch.rpm"
     scripts:
-    
+
   - type: rpm-ostree
     repos:
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
@@ -45,15 +45,26 @@ modules:
       - distrobox
       - gnome-tweaks
       - ffmpeg
+      - gstreamer1-plugin-libav
+      - gstreamer1-plugins-bad-free-extras
+      - gstreamer1-plugins-bad-freeworld
+      - gstreamer1-plugins-ugly
+      - gstreamer1-vaapi
+      - mesa-va-drivers-freeworld
+      - mesa-vdpau-drivers-freeworld
       - mullvad-vpn
-      # - micro
-      # - starship
+
     remove:
       - ffmpeg-free
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - libavcodec-free
+      - libavdevice-free
+      - libavfilter-free
+      - libavformat-free
+      - libavutil-free
+      - libpostproc-free
+      - libswresample-free
+      - libswscale-free
+      - mesa-va-drivers
 
   - type: gnome-extensions
     install:
