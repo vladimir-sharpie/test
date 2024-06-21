@@ -50,6 +50,7 @@ modules:
       - mesa-va-drivers-freeworld
       - mesa-vdpau-drivers-freeworld
       - mesa-filesystem
+      - mullvad-vpn
       # - alsa-firmware 
       # - android-udev-rules 
       # - distrobox
