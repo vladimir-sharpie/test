@@ -49,6 +49,7 @@ modules:
       - gstreamer1-vaapi
       - mesa-va-drivers-freeworld
       - mesa-vdpau-drivers-freeworld
+      - mesa-filesystem
       # - alsa-firmware 
       # - android-udev-rules 
       # - distrobox
